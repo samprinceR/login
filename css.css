@@ -2,7 +2,7 @@ body {
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-    background: url(dfve.jpg) no-repeat;
+    background: url(./img/dfve.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+.box h2:hover {
+    color: #03a9f4;
+}
+
 .box .inputbox {
     position: relative;
 }
@@ -38,7 +42,8 @@ body {
     letter-spacing: 1px;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #03a9f4;
+    ;
     outline: none;
     background: transparent;
 }
@@ -52,12 +57,12 @@ body {
     color: white;
     letter-spacing: 1px;
     pointer-events: none;
-    transition: .5s;
+    transition: .8s;
 }
 
 .box .inputbox input:focus~label,
 .box .inputbox input:valid~label {
-    top: -18px;
+    top: -25px;
     left: 0;
     color: #03a9f4;
     font-size: 12px;
@@ -70,10 +75,18 @@ body {
     color: white;
     background: #03a9f4;
     padding: 10px 20px;
-    cursor: pointer;
+    cursor: progress;
     border-radius: 5px;
 }
 
 .box input[type="submit"]:hover {
     background: red
+}
+
+.heart {
+    color: red;
+}
+
+#done-last .now {
+    color: white;
 }
